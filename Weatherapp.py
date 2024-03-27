@@ -59,7 +59,7 @@ def getWeather():
     d.config(text=description)
     # first cell
     firstdayimage = json_data["daily"][0]["weather"][0]["icon"]
-    photo1 = ImageTk.PhotoImage(file=f"{firstdayimage}@2x.png")
+    photo1 = ImageTk.PhotoImage(file=f"D:/2. College Work (Degree)/Second Year/3rd sem/Z. Mini Project – 1 A/weather forecast/icon/{firstdayimage}@2x.png")
     firstimage.config(image=photo1)
     firstimage.image = photo1
     tempday1 = json_data["daily"][0]["temp"]["day"]
@@ -68,7 +68,8 @@ def getWeather():
 
     # second cell
     seconddayimage = json_data["daily"][1]["weather"][0]["icon"]
-    img = Image.open(f"{seconddayimage}@2x.png")
+    print(seconddayimage, '71')
+    img = Image.open(f"D:/2. College Work (Degree)/Second Year/3rd sem/Z. Mini Project – 1 A/weather forecast/icon/{seconddayimage}@2x.png")
     resized_image = img.resize((50, 50))
     photo2 = ImageTk.PhotoImage(resized_image)
     secondimage.config(image=photo2)
@@ -79,7 +80,7 @@ def getWeather():
     # third cell
     thirddayimage = json_data["daily"][2]["weather"][0]["icon"]
 
-    img = Image.open(f"{thirddayimage}@2x.png")
+    img = Image.open(f"D:/2. College Work (Degree)/Second Year/3rd sem/Z. Mini Project – 1 A/weather forecast/icon/{thirddayimage}@2x.png")
     resized_image = img.resize((50, 50))
     photo3 = ImageTk.PhotoImage(resized_image)
     thirdimage.config(image=photo3)
@@ -91,7 +92,7 @@ def getWeather():
     # fourth cell
     fourthdayimage = json_data["daily"][3]["weather"][0]["icon"]
 
-    img = Image.open(f"{fourthdayimage}@2x.png")
+    img = Image.open(f"D:/2. College Work (Degree)/Second Year/3rd sem/Z. Mini Project – 1 A/weather forecast/icon/{fourthdayimage}@2x.png")
     resized_image = img.resize((50, 50))
     photo4 = ImageTk.PhotoImage(resized_image)
     fourthimage.config(image=photo4)
@@ -103,7 +104,7 @@ def getWeather():
     # fifth cell
     fifthdayimage = json_data["daily"][4]["weather"][0]["icon"]
 
-    img = Image.open(f"{fifthdayimage}@2x.png")
+    img = Image.open(f"D:/2. College Work (Degree)/Second Year/3rd sem/Z. Mini Project – 1 A/weather forecast/icon/{fifthdayimage}@2x.png")
     resized_image = img.resize((50, 50))
     photo5 = ImageTk.PhotoImage(resized_image)
     fifthimage.config(image=photo5)
@@ -115,7 +116,7 @@ def getWeather():
     # sixth cell
     sixthdayimage = json_data["daily"][5]["weather"][0]["icon"]
 
-    img = Image.open(f"{sixthdayimage}@2x.png")
+    img = Image.open(f"D:/2. College Work (Degree)/Second Year/3rd sem/Z. Mini Project – 1 A/weather forecast/icon/{sixthdayimage}@2x.png")
     resized_image = img.resize((50, 50))
     photo6 = ImageTk.PhotoImage(resized_image)
     sixthimage.config(image=photo6)
@@ -127,7 +128,7 @@ def getWeather():
     # seventh cell
     seventhdayimage = json_data["daily"][6]["weather"][0]["icon"]
 
-    img = Image.open(f"{seventhdayimage}@2x.png")
+    img = Image.open(f"D:/2. College Work (Degree)/Second Year/3rd sem/Z. Mini Project – 1 A/weather forecast/icon/{seventhdayimage}@2x.png")
     resized_image = img.resize((50, 50))
     photo7 = ImageTk.PhotoImage(resized_image)
     seventhimage.config(image=photo7)
